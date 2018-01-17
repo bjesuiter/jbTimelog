@@ -1,18 +1,30 @@
 import 'package:angular/angular.dart';
-import 'package:angular_components/angular_components.dart';
-
-import 'src/todo_list/todo_list_component.dart';
+import 'package:angular_components/app_layout/material_temporary_drawer.dart';
+import 'package:angular_components/content/deferred_content.dart';
+import 'package:angular_components/material_button/material_button.dart';
+import 'package:angular_components/material_icon/material_icon.dart';
+import 'package:angular_components/material_list/material_list.dart';
+import 'package:angular_components/material_list/material_list_item.dart';
+import 'package:angular_components/material_toggle/material_toggle.dart';
 
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
-
 @Component(
   selector: 'my-app',
-  styleUrls: const ['app_component.css'],
+  styleUrls: const [
+    'package:angular_components/app_layout/layout.scss.css',
+    'app_component.css'
+  ],
   templateUrl: 'app_component.html',
-  directives: const [materialDirectives, TodoListComponent],
-  providers: const [materialProviders],
+  directives: const [
+    DeferredContentDirective,
+    MaterialButtonComponent,
+    MaterialIconComponent,
+    MaterialListComponent,
+    MaterialListItemComponent,
+    MaterialTemporaryDrawerComponent,
+    MaterialToggleComponent,
+  ]
 )
 class AppComponent {
-  // Nothing here yet. All logic is in TodoListComponent.
 }
