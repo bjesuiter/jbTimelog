@@ -6,6 +6,12 @@ A web app that uses [AngularDart](https://webdev.dartlang.org/angular) and
 Created from templates made available by Stagehand under a BSD-style
 [license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
 
+## Disclaimer
+this is a personal project which has just started. 
+I have no timeframe when to work on this, so don't expect to use it some time soon.
+But I'm open to contributions, so write me, 
+if you have improvement ideas to the planned features or you wan't to join development. :)
+
 ## Planned Features
 - Main page is a list of tracking entries (worklogs), top worklog space can be used 
 to create a new time log entry manually or to setup and start a new time tracker.
